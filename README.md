@@ -37,6 +37,22 @@ To customise port of webapp, create <i>.env</i>
 3. Access .env parameters in app.js using dotenv.config()
 4. Access Port value usign process.env.YOUR_PORT and provide it to app.listen()
 
+### PORT Config (frontend)
+To customise port of react-app, open <i>package.json</i> 
+1. Find Start  under Scripts object
+2. Assign the port value of your choice in set PORT //default port value is 3000
+
+```
+"scripts": {
+    "start": "set PORT=8000 && react-scripts start"
+  }
+ ```
+3. If you want to proceed with default port then skip above steps and do 
+```
+"scripts": {
+    "start": "react-scripts start"
+  }
+ ```
 ### CORS
 To access resources available in backend running on different port <i>(while developing in localhost)</i> proceed with either of following 2 steps:
 
