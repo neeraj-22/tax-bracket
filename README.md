@@ -56,7 +56,7 @@ To customise port of react-app, open <i>package.json</i>
 ### CORS
 To access resources available in backend running on different port <i>(while developing in localhost)</i> proceed with either of following 2 steps:
 
-1. Make sure to run coomand <i><b>npm i cors</b></i> before using in app.js file
+1. Make sure to run command <i><b>npm i cors</b></i> before using in app.js file
 
 ```
 app.use(cors())
